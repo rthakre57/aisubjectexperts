@@ -82,10 +82,14 @@
 <body>
   <div class="container">
     <h1>Welcome to AI Subject Matter Experts</h1>
-    <a href="https://b883-103-187-249-230.ngrok-free.app" class="button-link">
-      www.aisubjectmatterexperts.com
-    </a>
+    <button class="button-link" onclick="openInSameTab()">www.aisubjectmatterexperts.com</button>
     <p>Click the button to open your hosted AI platform.</p>
   </div>
+  <script>
+    function openInSameTab() {
+      const url = "https://b883-103-187-249-230.ngrok-free.app";  // Replace with your actual URL
+      window.location.href = url;  // Opens in the same tab
+    }
+  </script>
 </body>
 </html>
