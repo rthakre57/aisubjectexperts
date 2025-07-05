@@ -54,22 +54,34 @@
     margin-bottom: 20px;
   }
 
-  a.button-link {
+    .button-link {
     display: inline-block;
     padding: 14px 28px;
-    background-color: #14532d;
+    font-size: 16px;
+    font-weight: 600;
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(to right, #14532d, #228b22);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  a.button-link:hover {
-    background-color: #166534;
-    box-shadow: 0 0 10px 3px rgba(20, 83, 45, 0.5);
+  .button-link:hover {
+    background: linear-gradient(to right, #1a5c36, #2daa2d);
+    box-shadow: 0 6px 18px rgba(20, 83, 45, 0.4);
     transform: translateY(-2px);
+  }
+
+  .button-link:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(20, 83, 45, 0.3);
+  }
+
+  .button-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 139, 34, 0.4);
   }
 
   p {
